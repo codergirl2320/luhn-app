@@ -1,5 +1,7 @@
 <?php
 
+include_once("index.html");
+
 $num = $_POST['num'];
 
 function validCard($num){
