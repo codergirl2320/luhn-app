@@ -4,24 +4,32 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
     <title></title>
   </head>
   <body>
     <h1>The Luhn Algorithm</h1>
-    <h5>Credit card numbers can be validated with a process called the Luhn algorithm.</h5><br/>
+    <h5>Credit card numbers can be validated with a process called the Luhn algorithm.</h5>
       <h5>The Luhn algorithm  works like this:</h5>
       <div class="steps">
-        <p>1. Starting with the next to last digit and continuing with every other digit<br/>going back to the beginning of the card number, double the digit.<br/>
-          2. Sum all digits in the altered number.<br/>
-          3. If that total is a multiple of 10, the number is valid.<br/><br/>
+        <p>STEP 1. Starting with the next to last digit and continuing with every other digit<br/>going back to the beginning of the card number, double the digit.<br/>
+          STEP 2. Sum all digits in the altered number.<br/>
+          STEP 3. If that total is a multiple of 10, the number is valid.<br/><br/>
           For example, given the card number 4408 0412 3456 7893:<br/><br/>
-          Orig:   4 4 0 8 0 4 1 2 3 4   5 6   7 8   9 3<br/>
-          Step 1:   8 4 0 8 0 4 2 2 6 4  10 6  14 8  18 3<br/>
-          Step 2:   8+4+0+8+0+4+2+2+6+4+1+0+6+1+4+8+1+8+3 = 70<br/>
-          Step 3:   70 % 10 == 0</p>
+          ORIG:   4 4 0 8 0 4 1 2 3 4   5 6   7 8   9 3<br/>
+          STEP 1:   8 4 0 8 0 4 2 2 6 4  10 6  14 8  18 3<br/>
+          STEP 2:   8+4+0+8+0+4+2+2+6+4+1+0+6+1+4+8+1+8+3 = 70<br/>
+          STEP 3:   70 % 10 == 0</p>
       </div>
-    <form action="index.php" method="post">
+      <div class="assignment">
+        <h5>CODE CHALLENGE:</h5>
+        <p>Write a function named validCard() that takes a number as an argument<br/>and returns true for a valid number and false for an invalid number.<br/><br/>
+        validCard(1234567890123456); //should be false<br/>
+        validCard(4408041234567893); //should be true<br/>
+        validCard(38520000023237); //should be true<br/>
+        validCard(4222222222222); //should be true</p>
+      </div>
+    <form action="script.php" method="post">
       <input class="input" type="text" name="num"></input><br/>
       <button type="submit">Check Validity</button>
     </form>
