@@ -2,16 +2,34 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #8C837B;
-  padding: 40px;
+  padding: 30px;
   text-align: center;
 }
 
 .input {
   width: 300px;
+  margin: 15px auto;
+}
+
+form {
+  margin: 0 auto;
 }
 
 button {
   background-color: #595752;
   border: 1px solid #F2F2F2;
   color: #F2F2F2;
+}
+
+p {
+  margin: 0px;
+}
+
+.steps {
+  background-color: #A69C94;
+  width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #595752;
 }

@@ -10,8 +10,9 @@
   <body>
     <h1>The Luhn Algorithm</h1>
     <h5>Credit card numbers can be validated with a process called the Luhn algorithm.</h5>
-      <h5>The Luhn algorithm  works like this:</h5>
+
       <div class="steps">
+        <h5>The Luhn algorithm  works like this:</h5>
         <p>STEP 1. Starting with the next to last digit and continuing with every other digit<br/>going back to the beginning of the card number, double the digit.<br/>
           STEP 2. Sum all digits in the altered number.<br/>
           STEP 3. If that total is a multiple of 10, the number is valid.<br/><br/>
@@ -24,10 +25,10 @@
       <div class="assignment">
         <h5>CODE CHALLENGE:</h5>
         <p>Write a function named validCard() that takes a number as an argument<br/>and returns true for a valid number and false for an invalid number.<br/><br/>
-        validCard(1234567890123456); //should be false<br/>
-        validCard(4408041234567893); //should be true<br/>
-        validCard(38520000023237); //should be true<br/>
-        validCard(4222222222222); //should be true</p>
+        validCard(1234567890123456); //should evaluate to false<br/>
+        validCard(4408041234567893); //should evaluate to true<br/>
+        validCard(38520000023237); //should evaluate to true<br/>
+        validCard(4222222222222); //should evaluate to true</p>
       </div>
     <form action="script.php" method="post">
       <input class="input" type="text" name="num"></input><br/>
