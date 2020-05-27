@@ -33,3 +33,7 @@ p {
   border-radius: 5px;
   border: 1px solid #595752;
 }
+
+a {
+  color: white;
+}
